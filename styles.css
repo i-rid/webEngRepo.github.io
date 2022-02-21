@@ -1,0 +1,44 @@
+/* 
+  Variables
+*/
+:root {
+  --primaryColor: #f15025;
+  --mainBlack: #222;
+  --mainWhite: #fff;
+  --offWhite: #f7f7f7;
+  --darkGrey: #afafaf;
+  --mainTransition: all 0.3s linear;
+  --mainSpacing: 0.2rem;
+}
+/* 
+page
+*/
+.firstPage-header {
+  min-height: 100vh;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  /* after blue */
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.firstPage-banner p {
+  width: 80%;
+  max-width: 560px;
+  font-size: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .firstPage-banner {
+    padding: 0 3rem;
+    /* background: green; */
+  }
+}
+@media screen and (min-width: 768px) {
+  .firstPage-header {
+    background: linear-gradient(rgba(54, 53, 53, 0.75), rgba(0, 0, 0, 0.75)),
+      url("./image-2.jpeg") center/cover fixed no-repeat;
+  }
+  .firstPage-banner h1 {
+    font-size: 4rem;
+  }
+}
